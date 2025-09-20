@@ -53,7 +53,7 @@ Follow these steps to set up and run the project on your local machine.
 
 ### 1\. Install Dependencies
 
-Install all the required Python packages using the `requirements.txt` file.
+Install all the required Python packages.
 
 ```bash
 pip install streamlit langchain-groq langchain chromadb pandas python-dotenv langchain-community
