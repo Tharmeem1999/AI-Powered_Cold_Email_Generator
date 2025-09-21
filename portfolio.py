@@ -3,7 +3,7 @@ import chromadb
 import uuid
 
 class Portfolio:
-    def __init__(self, file_path="app/resource/my_portfolio.csv"):
+    def __init__(self, file_path="resource/my_portfolio.csv"):
         self.file_path = file_path      # path to .csv file
         self.data = pd.read_csv(file_path)      # loads portfolio data into dataframe
         self.chroma_client = chromadb.PersistentClient('vectorstore')       # sets up local vector DB
@@ -20,4 +20,5 @@ class Portfolio:
 
     def query_links(self, skills):
         # Searches vector DB for top 2 portfolio items matching input skills
+
         return self.collection.query(query_texts=skills, n_results=2).get('metadatas', [])
