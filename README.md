@@ -72,7 +72,7 @@ You need a Groq API key to use Llama 3.3.
 
 ### 3\. Prepare the Portfolio Data
 
-The `my_portfolio.csv` file acts as the knowledge base for your company's projects. Make sure it is located at `app/resource/my_portfolio.csv`. The current file uses dummy URLs, which you should replace with your actual project links.
+The `my_portfolio.csv` file acts as the knowledge base for your company's projects. Make sure it is located at `resource/my_portfolio.csv`. The current file uses dummy URLs, which you should replace with your actual project links.
 
 The CSV file must contain the following columns:
 
